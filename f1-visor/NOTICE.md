@@ -1,0 +1,9 @@
+# Attribution and artifact scope
+
+- Design, prototype and original source material: Tan Xiayang / 谈夏洋.
+- `docs/assets/prototype.jpg` is a raster rendering of page 5 of the author-supplied `f1.pdf`. It contains prototype photographs and product modelling, not newly generated evidence. The full PDF is not redistributed in this repository. Portfolio images are shown for project documentation; they are outside the software MIT grant. Third-party logos and marks remain with their owners.
+- The reference Arduino sketch follows the protocol and D2 / hardware UART approach shown on page 4 of that portfolio. The author confirmed the button/Bluetooth interaction had been tested on the prototype. Debouncing now emits one command per press.
+- Model architecture: torchvision EfficientNet-B0 feature extractor, adaptive average pooling, dropout and a two-output linear head. Default training initializes from torchvision ImageNet weights. PyTorch/torchvision and pretrained artifacts retain their upstream terms.
+- The author later supplied the original collection notebook, three training notebooks with saved outputs and three extracted test scripts. Their useful logic is integrated into the current CLI tools; provenance and historical results are documented in `docs/HISTORY.md`. Raw dataset images, their licenses and historical split membership are still unavailable. Source ZIPs and Git exclude datasets and trained weights. Only publish a separate model release after establishing the rights and provenance of its training data and upstream weights.
+- The original `.pt` files are retained locally. The repository's MIT license applies to original software and authored documentation, not automatically to those models or external data.
+- `F1` describes the design context. No affiliation, endorsement, certification or performance approval is implied.

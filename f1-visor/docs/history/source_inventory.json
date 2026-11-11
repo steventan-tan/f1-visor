@@ -1,0 +1,88 @@
+{
+  "status": "historical saved outputs, not independently reproduced",
+  "files": [
+    {
+      "file": "f1_image_collect.ipynb",
+      "sha256": "abffee0562bd42e181c33654af453833e5616ac90ce135bd53586ee3c0978e52",
+      "bytes": 71495,
+      "cells": 6
+    },
+    {
+      "file": "f1-aimodel.ipynb",
+      "sha256": "fca9f92165616d9237c1fbbc18e7046567b81cde52ef3d9292b59688bd15008b",
+      "bytes": 159058,
+      "cells": 20
+    },
+    {
+      "file": "f1-aimodel-v2.ipynb",
+      "sha256": "7edeec4d3291bc7d7dbab09a5eebd9a609b3208057ed4067a2f8560c67ed1233",
+      "bytes": 577325,
+      "cells": 8
+    },
+    {
+      "file": "f1-aimodel-v3.ipynb",
+      "sha256": "cc53abf2eaa8822f61a479e5e2cc2736fd55db58e5cea8112cf261d7e3610d3a",
+      "bytes": 1055969,
+      "cells": 8
+    },
+    {
+      "file": "extracted_tests/image_prediction.py",
+      "sha256": "9731bbd24996bc4bae9b014af6038dfd3096920bbb7acfc5ce7c027e5eb72227",
+      "bytes": 1906
+    },
+    {
+      "file": "extracted_tests/evaluation_plots.py",
+      "sha256": "db41c670de78fba2f0e44d30a40ffdce3bbfed5b04757661d58ab1a801545643",
+      "bytes": 5030
+    },
+    {
+      "file": "extracted_tests/camera_test.py",
+      "sha256": "e52f95338cf3d2d2a4396f123472f6f8811bea55a8489b68d82cd67c0036e553",
+      "bytes": 4612
+    }
+  ],
+  "selected_outputs": {
+    "f1-aimodel.ipynb": [
+      {
+        "cell_index": 7,
+        "text": "[classes] {'clean': 0, 'stain': 1}\n[counts] {'clean': 23, 'stain': 114}\n[weights] {'clean': 1.664, 'stain': 0.336}"
+      },
+      {
+        "cell_index": 15,
+        "text": "[val] AP=1.0000, selected_threshold=0.9722 (target recall≥0.98)"
+      },
+      {
+        "cell_index": 17,
+        "text": "[test] threshold: 0.97216796875\n[test] classification report (0=clean, 1=stain)\n              precision    recall  f1-score   support\n\n           0     0.5000    1.0000    0.6667         6\n           1     1.0000    0.7692    0.8696        26\n\n    accuracy                         0.8125        32\n   macro avg     0.7500    0.8846    0.7681        32\nweighted avg     0.9062    0.8125    0.8315        32\n\n[test] confusion matrix\n[[ 6  0]\n [ 6 20]]"
+      }
+    ],
+    "f1-aimodel-v2.ipynb": [
+      {
+        "cell_index": 2,
+        "text": "Classes: {'clean': 0, 'stain': 1}\nClass counts: {'clean': 23, 'stain': 114}\nClass weights: {'clean': 1.664, 'stain': 0.336}"
+      },
+      {
+        "cell_index": 6,
+        "text": "Val — loss: 0.038884665817022324 acc: 1.0\nTest — loss: 0.0270881075412035 acc: 1.0\nVal AP: 1.0\nSelected threshold: 0.91162109375\nClassification Report (test):\n              precision    recall  f1-score   support\n\n           0     0.7500    1.0000    0.8571         6\n           1     1.0000    0.9231    0.9600        26\n\n    accuracy                         0.9375        32\n   macro avg     0.8750    0.9615    0.9086        32\nweighted avg     0.9531    0.9375    0.9407        32\n\nConfusion Matrix (test):\n[[ 6  0]\n [ 2 24]]"
+      }
+    ],
+    "f1-aimodel-v3.ipynb": [
+      {
+        "cell_index": 1,
+        "text": "[split] class=clean: total 99, train 69, val 14, test 16\n[split] class=stain: total 190, train 133, val 28, test 29\ntrain exists? True subdirs: ['clean', 'stain']\nval exists? True subdirs: ['clean', 'stain']\ntest exists? True subdirs: ['clean', 'stain']"
+      },
+      {
+        "cell_index": 2,
+        "text": "Classes: {'clean': 0, 'stain': 1}\ntrain_loader length: 7 val_loader: 2 test_loader: 2"
+      },
+      {
+        "cell_index": 4,
+        "text": "Final Test — loss: 0.07848183827267753 acc: 0.9555555555555556\nSelected best_thr: 0.94921875"
+      },
+      {
+        "cell_index": 5,
+        "text": "=== Classification Report (Test) ===\n              precision    recall  f1-score   support\n\n           0     0.8421    1.0000    0.9143        16\n           1     1.0000    0.8966    0.9455        29\n\n    accuracy                         0.9333        45\n   macro avg     0.9211    0.9483    0.9299        45\nweighted avg     0.9439    0.9333    0.9344        45"
+      }
+    ]
+  }
+}

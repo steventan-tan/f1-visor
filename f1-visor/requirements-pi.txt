@@ -1,0 +1,5 @@
+# Install Picamera2/gpiozero/pigpio with apt; see docs/HARDWARE.md.
+# Training-only torchvision is not needed for Pi inference.
+torch==2.8.0
+# Reuse apt NumPy/Pillow so Picamera2's system libraries keep their matching ABI.
+pyserial>=3.5,<4

@@ -1,0 +1,22 @@
+[Unit]
+Description=F1 visor camera and Bluetooth controller
+After=bluetooth.service pigpiod.service f1-rfcomm.service
+Requires=pigpiod.service f1-rfcomm.service
+
+[Service]
+Type=simple
+# Edit User/Group to the account that owns /opt/f1-visor.
+User=pi
+Group=pi
+SupplementaryGroups=video dialout gpio
+WorkingDirectory=/opt/f1-visor
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/f1-visor/.venv/bin/python /opt/f1-visor/detect.py --config /opt/f1-visor/config.local.json
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+TimeoutStopSec=15
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

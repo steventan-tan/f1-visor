@@ -1,0 +1,14 @@
+{
+  "model": "models/visor_fp32.pt",
+  "serial_port": "/dev/rfcomm0",
+  "baud": 9600,
+  "servo_gpio": 13,
+  "servo_seconds": 3.0,
+  "servo_neutral": 0.0,
+  "servo_speed": 1.0,
+  "min_pulse_width": 0.0005,
+  "max_pulse_width": 0.0025,
+  "hold_seconds": 3.0,
+  "cooldown_seconds": 3.0,
+  "lock_path": "~/.cache/f1-visor/controller.lock"
+}
